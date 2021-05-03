@@ -1,12 +1,10 @@
 import React from 'react';
 import { StyleSheet, View, Image, Text } from 'react-native';
-import { useDeviceOrientation } from '@react-native-community/hooks';
 
 import colors from '../config/colors';
 import chair from '../assets/chair.jpg';
 
 const ViewImageScreen = () => {
-  console.log(useDeviceOrientation());
   return (
     <View style={styles.container}>
       <View style={styles.closeIcon}></View>
