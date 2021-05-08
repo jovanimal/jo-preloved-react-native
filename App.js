@@ -1,18 +1,12 @@
 import React from 'react';
-import { View } from 'react-native';
+import { StyleSheet, View, Button } from 'react-native';
 
-import AppText from './app/components/AppText';
+import WelcomeScreen from './app/screens/WelcomeScreen';
+import ListingScreen from './app/screens/ListingScreen';
+import Card from './app/components/Card';
 
 export default function App() {
   return (
-    <View 
-      style={{ 
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center'
-      }}
-    >
-      <AppText>I love React Native!</AppText>
-    </View>
+    <ListingScreen />
   );
 }
