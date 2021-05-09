@@ -4,17 +4,15 @@ import { Image, StyleSheet, View } from 'react-native';
 import AppText from './AppText';
 import colors from '../config/colors';
 
-import jacket from '../assets/jacket.jpg';
-
 const Card = props => {
-  const { title, subtitle, image } = props;
+  const { title, subTitle, image } = props;
 
   return (
     <View style={styles.card}>
-      <Image style={styles.image} source={jacket} />
+      <Image style={styles.image} source={image} />
       <View style={styles.detailsContainer}>
         <AppText style={styles.title}>{title}</AppText>
-        <AppText style={styles.subtitle}>{subtitle}</AppText>
+        <AppText style={styles.subTitle}>{subTitle}</AppText>
       </View>
     </View>
   );
@@ -35,7 +33,7 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 200,
   },
-  subtitle: {
+  subTitle: {
     color: colors.secondary,
     fontWeight: 'bold',
   },
