@@ -28,7 +28,7 @@ const AppPicker = props => {
   const [showModal, setShowModal] = useState(false);
 
   return (
-    <>
+    <React.Fragment>
       <TouchableWithoutFeedback onPress={() => setShowModal(true)}>
         <View style={styles.container}>
           {icon && (
@@ -68,7 +68,7 @@ const AppPicker = props => {
           />
         </Screen>
       </Modal>
-    </>
+    </React.Fragment>
   );
 };
 
