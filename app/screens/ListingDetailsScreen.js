@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, Image, View } from 'react-native';
 
 import AppText from '../components/AppText';
-import ListItem from '../components/ListItem';
+import ListItem from '../components/lists/ListItem';
 import colors from '../config/colors';
 
 import jacket from '../assets/jacket.jpg';
