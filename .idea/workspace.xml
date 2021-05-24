@@ -4,6 +4,8 @@
     <list default="true" id="9cd0bbee-4f46-49e7-bf74-616599653820" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -23,6 +25,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -38,18 +41,22 @@
     <servers />
   </component>
   <component name="WindowStateProjectService">
-    <state x="604" y="345" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1620458675171">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state x="453" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1621849458968">
+      <screen x="0" y="23" width="1920" height="987" />
     </state>
     <state x="604" y="345" key="#com.intellij.execution.impl.EditConfigurationsDialog/-1680.23.1680.1027/0.23.2560.1347@0.23.2560.1347" timestamp="1620458675171" />
-    <state x="540" y="283" width="1200" height="800" key="AVDManager" timestamp="1620459705797">
+    <state x="453" y="259" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1920.987@0.23.1920.987" timestamp="1621849458968" />
+    <state x="405" y="574" width="900" height="587" key="AVDManager" timestamp="1621860365841">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
     <state x="540" y="283" width="1200" height="800" key="AVDManager/-1680.23.1680.1027/0.23.2560.1347@0.23.2560.1347" timestamp="1620459705797" />
-    <state x="641" y="322" key="SettingsEditor" timestamp="1620459705486">
-      <screen x="0" y="23" width="2560" height="1347" />
+    <state x="405" y="214" width="900" height="587" key="AVDManager/0.23.1920.987@0.23.1920.987" timestamp="1621850324561" />
+    <state x="405" y="574" width="900" height="587" key="AVDManager/0.23.2560.1347@0.23.2560.1347" timestamp="1621860365841" />
+    <state x="481" y="242" key="SettingsEditor" timestamp="1621850021388">
+      <screen x="0" y="23" width="1920" height="987" />
     </state>
     <state x="641" y="322" key="SettingsEditor/-1680.23.1680.1027/0.23.2560.1347@0.23.2560.1347" timestamp="1620459705486" />
+    <state x="481" y="242" key="SettingsEditor/0.23.1920.987@0.23.1920.987" timestamp="1621850021388" />
     <state x="805" y="321" key="run.anything.popup" timestamp="1620458681910">
       <screen x="0" y="23" width="2560" height="1347" />
     </state>
