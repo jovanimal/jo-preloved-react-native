@@ -5,6 +5,7 @@ import Screen from '../components/Screen';
 import Card from '../components/Card';
 
 import colors from '../config/colors';
+import routes from '../navigation/routes';
 
 const listings = [
   {
@@ -21,7 +22,7 @@ const listings = [
   },
 ];
 
-const ListingScreen = () => {
+const ListingScreen = ({ navigation }) => {
   return (
     <Screen style={styles.screen}>
       <FlatList
@@ -32,6 +33,7 @@ const ListingScreen = () => {
             title={item.title}
             subTitle={`RM ${item.price}`}
             image={item.image}
+            onPress={() => navigation.navigate(routes.LISTING_DETAILS, item)}
           />
         )}
       />
@@ -43,7 +45,7 @@ const styles = StyleSheet.create({
   screen: {
     padding: 20,
     backgroundColor: colors.light,
-  }
+  },
 });
 
 export default ListingScreen;
