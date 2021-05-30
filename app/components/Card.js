@@ -10,12 +10,12 @@ import AppText from './AppText';
 import colors from '../config/colors';
 
 const Card = props => {
-  const { title, subTitle, image, onPress } = props;
+  const { title, subTitle, imageUrl, onPress } = props;
 
   return (
     <TouchableWithoutFeedback onPress={onPress}>
       <View style={styles.card}>
-        <Image style={styles.image} source={image} />
+        <Image style={styles.image} source={{ uri: imageUrl }} />
         <View style={styles.detailsContainer}>
           <AppText style={styles.title}>{title}</AppText>
           <AppText style={styles.subTitle}>{subTitle}</AppText>
