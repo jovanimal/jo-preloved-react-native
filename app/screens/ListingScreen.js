@@ -5,7 +5,7 @@ import ActivityIndicator from '../components/ActivityIndicator';
 import Button from '../components/AppButton';
 import Screen from '../components/Screen';
 import Card from '../components/Card';
-import listingsApi from '../api/listing';
+import listingsApi from '../api/listings';
 import colors from '../config/colors';
 import routes from '../navigation/routes';
 import AppText from '../components/AppText';
