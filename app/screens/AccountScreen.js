@@ -3,10 +3,10 @@ import { StyleSheet, View, FlatList } from 'react-native';
 
 import ListItem from '../components/lists/ListItem';
 import ListItemSeparator from '../components/lists/ListItemSeparator';
-import Icon from '../components/Icon';
-import Screen from '../components/Screen';
-
 import colors from '../config/colors';
+import Icon from '../components/Icon';
+import routes from "../navigation/routes";
+import Screen from '../components/Screen';
 
 const menuItems = [
   {
@@ -22,7 +22,7 @@ const menuItems = [
       name: 'email',
       backgroundColor: colors.secondary,
     },
-    targetScreen: 'Messages',
+    targetScreen: routes.MESSAGES,
   },
 ];
 

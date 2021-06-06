@@ -7,6 +7,7 @@ import Screen from './app/components/Screen';
 import navigationTheme from './app/navigation/navigationTheme';
 import AppNavigator from './app/navigation/AppNavigator';
 import AccountNavigator from './app/navigation/AccountNavigator';
+import OfflineNotice from './app/components/OfflineNotice';
 
 // If the component is not used as a Screen,
 // we can use useNagivation hooks to access the navigation props
@@ -20,8 +21,11 @@ import AccountNavigator from './app/navigation/AccountNavigator';
 
 export default function App() {
   return (
-    <NavigationContainer theme={navigationTheme}>
-      <AppNavigator />
-    </NavigationContainer>
+    <>
+      <OfflineNotice />
+      <NavigationContainer theme={navigationTheme}>
+        <AppNavigator />
+      </NavigationContainer>
+    </>
   );
 }
