@@ -1,13 +1,10 @@
 import React, { useState } from 'react';
-import { Button, Text } from 'react-native';
 import { NavigationContainer, useNavigation } from '@react-navigation/native';
 import AppLoading from 'expo-app-loading';
 
 import AuthNavigator from './app/navigation/AuthNavigator';
-import Screen from './app/components/Screen';
 import navigationTheme from './app/navigation/navigationTheme';
 import AppNavigator from './app/navigation/AppNavigator';
-import AccountNavigator from './app/navigation/AccountNavigator';
 import OfflineNotice from './app/components/OfflineNotice';
 import AuthContext from './app/auth/context';
 import authStorage from './app/auth/storage';
