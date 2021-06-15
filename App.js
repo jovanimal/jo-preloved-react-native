@@ -8,6 +8,7 @@ import AppNavigator from './app/navigation/AppNavigator';
 import OfflineNotice from './app/components/OfflineNotice';
 import AuthContext from './app/auth/context';
 import authStorage from './app/auth/storage';
+import { navigationRef } from './app/navigation/rootNavigation';
 
 // If the component is not used as a Screen,
 // we can use useNagivation hooks to access the navigation props
@@ -30,14 +31,18 @@ export default function App() {
 
   if (!isReady) {
     return (
-      <AppLoading startAsync={restoreUser} onError={console.warn} onFinish={() => setIsReady(true)} />
+      <AppLoading
+        startAsync={restoreUser}
+        onError={console.warn}
+        onFinish={() => setIsReady(true)}
+      />
     );
   }
 
   return (
     <AuthContext.Provider value={{ user, setUser }}>
       <OfflineNotice />
-      <NavigationContainer theme={navigationTheme}>
+      <NavigationContainer ref={navigationRef} theme={navigationTheme}>
         {user ? <AppNavigator /> : <AuthNavigator />}
       </NavigationContainer>
     </AuthContext.Provider>

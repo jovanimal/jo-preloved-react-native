@@ -1,8 +1,9 @@
 import React from 'react';
-import { StyleSheet, View } from 'react-native';
+import { StyleSheet, View, Platform, KeyboardAvoidingView } from 'react-native';
 import { Image } from 'react-native-expo-image-cache';
 
 import AppText from '../components/AppText';
+import ContactSellerForm from '../components/ContactSellerForm';
 import ListItem from '../components/lists/ListItem';
 import colors from '../config/colors';
 
@@ -10,25 +11,31 @@ const ListingDetailsScreen = ({ route }) => {
   const listing = route.params;
 
   return (
-    <View>
-      <Image
-        style={styles.image}
-        preview={{ uri: listing.images[0].thumbnailUrl }}
-        tint="light"
-        uri={listing.images[0].url}
-      />
-      <View style={styles.detailsContainer}>
-        <AppText style={styles.title}>{listing.title}</AppText>
-        <AppText style={styles.price}>{listing.price}</AppText>
-        <View style={styles.userContainer}>
-          <ListItem
-            image={require('../assets/jovan.png')}
-            title="Jovan Goh"
-            subTitle="5 Listings"
-          />
+    <KeyboardAvoidingView
+      behavior="position"
+      keyboardVerticalOffset={Platform.OS === 'ios' ? 0 : 100}
+    >
+      <View>
+        <Image
+          style={styles.image}
+          preview={{ uri: listing.images[0].thumbnailUrl }}
+          tint="light"
+          uri={listing.images[0].url}
+        />
+        <View style={styles.detailsContainer}>
+          <AppText style={styles.title}>{listing.title}</AppText>
+          <AppText style={styles.price}>{listing.price}</AppText>
+          <View style={styles.userContainer}>
+            <ListItem
+              image={require('../assets/jovan.png')}
+              title="Jovan Goh"
+              subTitle="5 Listings"
+            />
+          </View>
         </View>
+        <ContactSellerForm listing={listing} />
       </View>
-    </View>
+    </KeyboardAvoidingView>
   );
 };
 
