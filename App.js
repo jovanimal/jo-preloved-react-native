@@ -9,16 +9,10 @@ import OfflineNotice from './app/components/OfflineNotice';
 import AuthContext from './app/auth/context';
 import authStorage from './app/auth/storage';
 import { navigationRef } from './app/navigation/rootNavigation';
+import logger from './app/utility/logger';
 
-// If the component is not used as a Screen,
-// we can use useNagivation hooks to access the navigation props
-// const Link = () => {
-//   const navigation = useNavigation();
-
-//   return (
-//     <Button title="Click" onPress={() => navigation.navigate('TweetDetails')} />
-//   )
-// }
+logger.start();
+// TODO: replace all console.log(error) to logger.log(error)
 
 export default function App() {
   const [user, setUser] = useState();

@@ -2,7 +2,11 @@
   "expo": {
     "name": "Jo-Preloved",
     "slug": "Jo-Preloved",
-    "platforms": ["ios", "android", "web"],
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",
@@ -23,6 +27,19 @@
     "description": "A marketplace to sell my own pre-loved stuff that I no longer need them anymore.",
     "notification": {
       "iosDisplayInForeground": true
+    },
+    "extra": {
+      "bugsnag": {
+        "apiKey": "cdc223746a612557cdb46a2441f4c6e0"
+      }
+    },
+    "hooks": {
+      "postPublish": [
+        {
+          "file": "@bugsnag/expo/hooks/post-publish.js",
+          "config": {}
+        }
+      ]
     }
   }
 }
