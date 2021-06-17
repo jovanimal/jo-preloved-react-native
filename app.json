@@ -2,6 +2,7 @@
   "expo": {
     "name": "Jo-Preloved",
     "slug": "Jo-Preloved",
+    "privacy": "unlisted",
     "platforms": [
       "ios",
       "android",
