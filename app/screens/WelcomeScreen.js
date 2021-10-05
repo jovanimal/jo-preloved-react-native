@@ -5,7 +5,7 @@ import routes from '../navigation/routes';
 import AppButton from '../components/AppButton';
 
 import background from '../assets/background.jpg';
-import logo from '../assets/logo-red.png';
+import logo from '../assets/logo.png';
 
 const WelcomeScreen = ({ navigation }) => {
   return (
